@@ -225,25 +225,59 @@ header #main-buttons{
 
 /*  DONATIONS  */
 
-.costlist{
-  text-align: center;
+.donationscolumn{
+  width:70%;
 }
 
-.costlist li{
+.donationscolumn h1{
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.donationscolumn h3{
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.donationlist{
+  text-align: center;
+  margin-top: 30px;
+}
+
+.donationlist li{
   display: inline;
   margin-right: 10px;
   margin-left: 10px;
 }
 
+.donationpayment{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.text_1{
+  height: 28px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 5%;
+}
+
 .button_2{
-height: 35px;
-width: 80px;
+height: 40px;
+width: 120px;
 background: #3197d6;
 border: 0;
 color: #ffffff;
+font-size: 20px;
 padding-left: 20px;
 padding-right: 20px;
-border-radius: 8%;
+border-radius: 5%;
+}
+
+
+.donationsinfocolumn{
+
 }
 
 /* FOOTER */
