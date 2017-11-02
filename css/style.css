@@ -223,6 +223,29 @@ header #main-buttons{
 
 }
 
+/*  DONATIONS  */
+
+.costlist{
+  text-align: center;
+}
+
+.costlist li{
+  display: inline;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.button_2{
+height: 35px;
+width: 80px;
+background: #3197d6;
+border: 0;
+color: #ffffff;
+padding-left: 20px;
+padding-right: 20px;
+border-radius: 8%;
+}
+
 /* FOOTER */
 
 footer{
