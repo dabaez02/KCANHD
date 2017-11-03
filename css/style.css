@@ -256,11 +256,44 @@ header #main-buttons{
     font-size: 20px;
 }
 
-.text_1{
+.donationform{
+    margin:30px;
+    width:55%;
+}
+
+
+.donationform ul li{
+    list-style-type: none;
+}
+
+.text_amountdonation{
   height: 28px;
   margin-left: 10px;
   margin-right: 10px;
   border-radius: 5%;
+  padding: 5px;
+  font-size: 20px;
+  text-align: center;
+  width: 180px;
+}
+
+.text_infodonation{
+  height: 28px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 5%;
+  padding: 5px;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.infodonationemail{
+  width:422px;
+}
+
+.infodonationtextarea{
+  border-radius: 0;
+  height: 100px;
 }
 
 .button_2{
@@ -274,6 +307,7 @@ padding-left: 20px;
 padding-right: 20px;
 border-radius: 5%;
 }
+
 
 
 .donationsinfocolumn{
