@@ -10,86 +10,90 @@
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
-
+<!-- MAIN HEADER -->
     <header class="headerborder">
-      <div class="container">
-        <div id="branding">
-          <img src="./img/logo.png">
+        <div class="container">
+          <div id="branding">
+            <img src="./img/logo.png">
+          </div>
+          <nav>
+            <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="videos.html">Videos</a></li>
+              <li class="current"><a href="donations.html">Donaciones</a></li>
+              <li><a href="contact.html">Contactanos</a></li>
+              <li><a href="about.html">Informacion</a></li>
+            </ul>
+          </nav>
+          <div id="main-buttons">
+              <form>
+                          <button type="submit" class="button_1">Subscribete</button>
+              </form>
+          </div>
         </div>
-        <nav>
-          <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="videos.html">Videos</a></li>
-            <li class="current"><a href="donations.html">Donaciones</a></li>
-            <li><a href="contact.html">Contactanos</a></li>
-            <li><a href="about.html">Informacion</a></li>
-          </ul>
-        </nav>
-        <div id="main-buttons">
-            <form>
-                        <button type="submit" class="button_1">Subscribete</button>
-            </form>
-        </div>
-      </div>
     </header>
-
+<!-- TITLE SECTION -->
     <section class="menutitles">
       <div class="container">
         <h2>Donaciones</h2
       </div>
     </section>
-
+<!-- MAIN SECTION -->
     <section>
       <div class="container">
-        <div class="donationscolumn">
-            <h1>¡Gracias por ver nuestros videos y apoyarnos!</h1>
-            <p>
-          Siempre estamos tratando de hacer que nuestro publico tenga el mejor entretenimiento que podamos brindarles,
-          nuestros recursos son limitados y necesitamos su apoyo. Si no puede sientase libre de compromiso.. Con todo
-          lo que tenemos actualmente siempre haremos nuestro mejor esfuerzo.
-          </p>
-          <h3>Seleccione la cantidad</h3>
-          <hr>
-            <ul class="donationlist">
-              <li><button type="submit" class="button_2">$ 5</button></li>
-              <li><button type="submit" class="button_2">$ 10</button></li>
-              <li><button type="submit" class="button_2">$ 15</button></li>
-              <li><button type="submit" class="button_2">$ 20</button></li>
-              <li><button type="submit" class="button_2">Otra</button></li>
-            </ul>
-            <div class="donationpayment">
-                Tu donación
-                $<input type="text" name="amountdonation" class="text_amountdonation" value="0">USD
-                <input type="radio" name="timesetdonation" value="Una vez" checked>Una vez
-                <input type="radio" name="timesetdonation" value="Mensual" checked>Mensual
-            </div>
-
-
-
-          <h3>Tu Información</h3>
-          <hr>
-              <div class="donationform">
-              <ul>
-                  <li>
-                  <input type="text" name="amountdonation" placeholder="Nombre" class="text_infodonation">
-                  <input type="text" name="amountdonation" placeholder="Apellido" class="text_infodonation">
-                  </li>
-                  <li><input type="text" name="amountdonation" class="text_infodonation infodonationemail" placeholder="correo@ejemplo.com"></li>
-                  <li><textarea rows="4" cols="51" class="text_infodonation infodonationtextarea" placeholder="Por favor escribenos algo!"></textarea></li>
-              </ul>
-              </div>
-              <div class="donationform">
-              </div>
-        </div>
-
-        <div class="donationsinfocolumn">
-          Información
-          ¿Es seguro donarnos?
-        </div>
+        <div class="donationcontainer">
+                <div class="donationscolumn">
+                      <h1>¡Gracias por ver nuestros videos y apoyarnos!</h1>
+                      <p>
+                        Siempre estamos tratando de hacer que nuestro publico tenga el mejor entretenimiento que podamos brindarles,
+                        nuestros recursos son limitados y necesitamos su apoyo. Si no puede sientase libre de compromiso.. Con todo
+                        lo que tenemos actualmente siempre haremos nuestro mejor esfuerzo.
+                      </p>
+                      <h3>Seleccione la cantidad</h3>
+                      <hr>
+                      <ul class="donationlist">
+                        <li><button type="submit" class="button_2">$ 5</button></li>
+                        <li><button type="submit" class="button_2">$ 10</button></li>
+                        <li><button type="submit" class="button_2">$ 15</button></li>
+                        <li><button type="submit" class="button_2">$ 20</button></li>
+                        <li><button type="submit" class="button_2">Otra</button></li>
+                      </ul>
+                    <div class="donationpayment">
+                        Tu donación
+                        $<input type="text" name="amountdonation" class="text_amountdonation" value="0">USD
+                        <input type="radio" name="timesetdonation" value="Una vez" checked>Una vez
+                        <input type="radio" name="timesetdonation" value="Mensual" checked>Mensual
+                    </div>
+                      <h3>Tu Información</h3>
+                      <hr>
+                        <div class="donationform">
+                            <div class="donationinput">
+                            <ul>
+                                <li>
+                                  <input type="text" name="amountdonation" placeholder="Nombre" class="text_infodonation">
+                                  <input type="text" name="amountdonation" placeholder="Apellido" class="text_infodonation">
+                                </li>
+                                <li><input type="text" name="amountdonation" class="text_infodonation infodonationemail" placeholder="correo@ejemplo.com"></li>
+                                <li><textarea rows="4" cols="51" class="text_infodonation infodonationtextarea" placeholder="Por favor escribenos algo!"></textarea></li>
+                            </ul>
+                            </div>
+                            <div class="donationsubmit">
+                              <h2>Amount</h2>
+                              <h1>$<span>0.00</span></h1>
+                              <button type="submit" name="submitdonation" class="button_2 submitbuttondonation">Donar</button>
+                            </div>
+                        </div>
+                </div>
+          <!-- MAIN RIGHT SIDE INFO COLUMM -->
+                <div class="donationsinfocolumn">
+                  Información
+                  ¿Es seguro donarnos?
+                </div>
+          </div>
       </div>
     </section>
-
-      <footer>
+<!-- FOOTER -->
+    <footer>
       <p>KCAN HD, Copyright &copy; 2017.</p>
     </footer>
 

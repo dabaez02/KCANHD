@@ -224,9 +224,13 @@ header #main-buttons{
 }
 
 /*  DONATIONS  */
+.donationcontainer{
+  width: 100%;
+}
 
 .donationscolumn{
   width:70%;
+  display: inline-block;
 }
 
 .donationscolumn h1{
@@ -257,12 +261,18 @@ header #main-buttons{
 }
 
 .donationform{
-    margin:30px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.donationinput{
+    margin: 0 10px;
     width:55%;
+    display: inline-block;
 }
 
 
-.donationform ul li{
+.donationinput ul li{
     list-style-type: none;
 }
 
@@ -308,10 +318,27 @@ padding-right: 20px;
 border-radius: 5%;
 }
 
+.donationsubmit{
+  display: inline-block;
+  background-color: #6eb6e2;
+  width: 40%;
+  vertical-align: top;
+  text-align: center;
+  padding-bottom: 30px;
+}
 
+.submitbuttondonation{
+  background-color: #ffc931;
+}
 
 .donationsinfocolumn{
-
+  width: 25%;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 30px;
+  margin-left: 30px;
+  border: 5px solid red;
+  height: 500px;
 }
 
 /* FOOTER */
