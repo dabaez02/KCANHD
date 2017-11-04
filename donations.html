@@ -52,15 +52,15 @@
                       <h3>Seleccione la cantidad</h3>
                       <hr>
                       <ul class="donationlist">
-                        <li><button type="submit" class="button_2">$ 5</button></li>
-                        <li><button type="submit" class="button_2">$ 10</button></li>
-                        <li><button type="submit" class="button_2">$ 15</button></li>
-                        <li><button type="submit" class="button_2">$ 20</button></li>
-                        <li><button type="submit" class="button_2">Otra</button></li>
+                        <li><button type="submit" class="button_2" onclick="donationsValue('5.00')">$ 5</button></li>
+                        <li><button type="submit" class="button_2" onclick="donationsValue('10.00')">$ 10</button></li>
+                        <li><button type="submit" class="button_2" onclick="donationsValue('15.00')">$ 15</button></li>
+                        <li><button type="submit" class="button_2" onclick="donationsValue('20.00')">$ 20</button></li>
+                        <li><button type="submit" class="button_2" onclick="donationsValue('0.00')">Otra</button></li>
                       </ul>
                     <div class="donationpayment">
                         Tu donación
-                        $<input type="text" name="amountdonation" class="text_amountdonation" value="0">USD
+                        $<input type="text" name="amountdonation" class="text_amountdonation" value="0.00">USD
                         <input type="radio" name="timesetdonation" value="Una vez" checked>Una vez
                         <input type="radio" name="timesetdonation" value="Mensual" checked>Mensual
                     </div>
@@ -79,15 +79,20 @@
                             </div>
                             <div class="donationsubmit">
                               <h2>Amount</h2>
-                              <h1>$<span>0.00</span></h1>
+                              <h1>$<span id="amountTotal">0.00</span></h1>
                               <button type="submit" name="submitdonation" class="button_2 submitbuttondonation">Donar</button>
                             </div>
                         </div>
                 </div>
           <!-- MAIN RIGHT SIDE INFO COLUMM -->
-                <div class="donationsinfocolumn">
-                  Información
-                  ¿Es seguro donarnos?
+                <div class="donationsinfocolumn" id="resizableColumn">
+                  <h3>Información</h3>
+                  <div onClick="resizeClass()">¿Es seguro donarnos en esta plataforma?</div>
+                  <p>
+                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                     Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+                     ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                  </p>
                 </div>
           </div>
       </div>
@@ -96,6 +101,7 @@
     <footer>
       <p>KCAN HD, Copyright &copy; 2017.</p>
     </footer>
-
+<!-- SCRIPTS -->
+<script src="scripts/main.js"></script>
   </body>
 </html>
